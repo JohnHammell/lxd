@@ -77,11 +77,15 @@ To do so, run the following commands:
 
     sudo ufw allow in on <network_bridge>
     sudo ufw route allow in on <network_bridge>
+    sudo ufw allow out on <network_bridge>
+    sudo ufw route allow out on <network_bridge>
 
 For example:
 
     sudo ufw allow in on lxdbr0
     sudo ufw route allow in on lxdbr0
+    sudo ufw allow out on lxdbr0
+    sudo ufw route allow out on lxdbr0
 
 % Repeat warning from above
 ```{include} network_bridge_firewalld.md
